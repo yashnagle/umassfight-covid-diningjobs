@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+   
+    <link rel = "stylesheet" href="questionnaireStyling.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>UMass Dining Questionnaire</h1>
+        <form onsubmit="return false" id="contactForm">
+            <input type="text" placeholder="Please Enter your Full name" id='name' />
+            <input type="text" placeholder="Is your bodytemperature over 100 degrees?" id='symptom1' />
+            <!-- <input type="checkbox" name="toggle" id="toggle"> -->
+            <input type="text" placeholder="Do you have a dry cough?" id='symptom2' />
+            <!-- <input type="checkbox" name="toggle" id="toggle"> -->
+            <input type="text" placeholder="Do you have a shortage of breath?" id='symptom3' />
+            <!-- <input type="checkbox" name="toggle" id="toggle"> -->
+            <!-- <input type="submit" value="SUBMIT"> -->
+            <button type = "submit" onclick="submitHelper()">submit</button>
+            <!-- <button type = "submit">Submit</button> -->
+
+
+            <!-- EDIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+            <!-- <button type = "submit" onclick="index.html">Sign out</button> -->
+
+
+        </form>
+    </div>
+ <div id ="over-area"></div>
+ <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> 
+   <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase.js"></script>
+ <script src = 'questionnaireBackend.js'></script>
+</body>
+</html>
+
+
+
+
